@@ -1,10 +1,14 @@
 # IMDB API
 
-### DESCRIPTION   
+## DESCRIPTION   
 This Project Contains Source Code to Design the database and build a REST API for a movie application like IMDB.  
 
 This Project is made in `NodeJS` and `MySQL` is used for Database.  
 
+## Requirements
+
+[NodeJS](https://nodejs.org/en/download/)  
+[MySQL](https://dev.mysql.com/downloads/windows/installer/8.0.html)
 ## Getting Started
 ### Creating Database
 1. MySQL is used for Database in this project.  
