@@ -5,6 +5,17 @@ This Project Contains Source Code to Design the database and build a REST API fo
 
 This Project is made in `NodeJS` and `MySQL` is used for Database.  
 
+## Getting Started
+### Creating Database
+1. MySQL is used for Database in this project.  
+2. `queries.sql` file contains all the script for creating Database and Tables.  
+
+### Running Source Code
+1. Use `npm install` to Install all the necessary packages.
+2. Go to `DB/connection.js` file, Update line number 6 with the password given during Database Creation.
+3. Open root directory in terminal.
+4. Use `npm run dev` to Start the Server.
+
 ## ENTITIES
 
 1. Movie
