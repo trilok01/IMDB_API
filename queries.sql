@@ -1,4 +1,4 @@
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'TriLok@01.';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password';
 
 CREATE DATABASE IMDB;
 
