@@ -71,6 +71,26 @@ This Project is made in `NodeJS` and `MySQL` is used for Database.
     URL: `localhost:4000/producer/`   
     METHOD: `GET`
 
+    ### Example   
+
+    #### Request
+    ![Get Producer Request](./Images/Get%20List%20of%20Producer.png)  
+
+    #### Response
+
+    ```JSON
+    [
+        {
+            "Id": 8,
+            "Name": "XYZ",
+            "Bio": "Producer",
+            "dob": "2002-10-04",
+            "Gender": "Male",
+            "Company": "ABC Production"
+        }
+    ]
+    ```
+
 ### Actor
 1. Add actor:  
     URL: `localhost:4000/actor/`   
@@ -89,10 +109,49 @@ This Project is made in `NodeJS` and `MySQL` is used for Database.
     2. Select `x-www-form-urlencoded`.
     3. Add all the required key and value pairs.
     4. Click Send.
+
+    ### Example   
+
+    #### Request
+    ![Add Actor Request](./Images/Add%20Actor.png)  
+
+    #### Response
+
+    ```JSON
+    {
+        "fieldCount": 0,
+        "affectedRows": 1,
+        "insertId": 11,
+        "serverStatus": 2,
+        "warningCount": 0,
+        "message": "",
+        "protocol41": true,
+        "changedRows": 0
+    }
+    ```
    
 2. Get List of Actor  
     URL: `localhost:4000/actor/`  
     METHOD: `GET`
+
+    ### Example   
+
+    #### Request
+    ![Get Actor Request](./Images/Get%20Actor.png)  
+
+    #### Response
+
+    ```JSON
+    [    
+        {
+            "Id": 11,
+            "Name": "PQR",
+            "Bio": "Actor",
+            "dob": "2002-10-04",
+            "Gender": "Male"
+        }
+    ]
+    ```
 
 ### Movie
 1. Add Movie:  
@@ -114,12 +173,75 @@ This Project is made in `NodeJS` and `MySQL` is used for Database.
     3. Add all the required key and value pairs.
     4. Click Send.
 
+    ### Example   
+
+    #### Request
+    ![Add Movie Request](./Images/Add%20Movie.png)  
+
+    #### Response
+
+    ```JSON
+    {
+        "msg": "Movie Added Successfully"
+    }
+    ```
+
 2. Get List of All Movies:  
     URL: `localhost:4000/movie/`  
     METHOD: `GET`
+
+    ### Example   
+
+    #### Request
+    ![Get All Movies Request](./Images/Get%20Movie.png)  
+
+    #### Response
+
+    ```JSON
+    [
+        {
+            "ID": 23,
+            "Name": "Top Gun",
+            "Plot": "122",
+            "Release_Date": "2022-06-11",
+            "Producer_ID": 5,
+            "actors": [
+                {
+                    "ID": 7,
+                    "Name": "Trilok"
+                }
+            ]
+        },
+    ]
+    ```
 
 3. Get Movie by Movie Id:  
     URL: `localhost:4000/movie/:id`  
     METHOD: `GET`
 
     1. At the place of `:id` in above URL, Put `id` of the movie to get the result.
+
+    ### Example   
+
+    #### Request
+    ![Get Movie by Id Request](./Images/Get%20Movie%20By%20Id.png)  
+
+    #### Response
+
+    ```JSON
+    [
+        {
+            "ID": 23,
+            "Name": "Top Gun",
+            "Plot": "122",
+            "Release_Date": "2022-06-11",
+            "Producer_ID": 5,
+            "actors": [
+                {
+                    "ID": 7,
+                    "Name": "Trilok"
+                }
+            ]
+        }
+    ]
+    ```
