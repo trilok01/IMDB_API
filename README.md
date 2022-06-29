@@ -45,7 +45,27 @@ This Project is made in `NodeJS` and `MySQL` is used for Database.
     1. Go to Body tab.
     2. Select `x-www-form-urlencoded`.
     3. Add all the required key and value pairs.
-    4. Click Send.    
+    4. Click Send.  
+
+    ### Example   
+
+    #### Request
+    ![Add Producer Request](./Images/Add%20Producer%20Request.png)  
+
+    #### Response
+
+    ```JSON
+    {
+        "fieldCount": 0,
+        "affectedRows": 1,
+        "insertId": 8,
+        "serverStatus": 2,
+        "warningCount": 0,
+        "message": "",
+        "protocol41": true,
+        "changedRows": 0
+    }
+    ```
     
 2. Get List of Producer  
     URL: `localhost:4000/producer/`   
